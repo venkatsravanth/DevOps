@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  apache:
+    image: web
+    ports:
+      - "1233:80"
+  mysql:
+    image: mysqlimage
+    ports:
+      - "2345:3434"
+  tomcat:
+    image: tomcatimage
+    ports:
+      - "443:8080"
